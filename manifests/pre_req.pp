@@ -20,7 +20,7 @@ class ambari::pre_req(
     user     => 'root',
   }
 
-  host { 'ambari_server':
+  host { 'ambari_agent':
     name => $::hostname,
     ip   => '10.1.1.1',
   }
